@@ -269,7 +269,7 @@ The `@auth` and `@guest` directives may be used to quickly determine if the curr
         <p>死循环了。</p>
     @endwhile
 
- > 当循环时，你可以使用 [循环变量](#the-loop-variable) 来获取循环中有价值的信息，比如循环中的首次或最后的迭代。
+> {tip} 当循环时，你可以使用 [循环变量](#the-loop-variable) 来获取循环中有价值的信息，比如循环中的首次或最后的迭代。
 
 当使用循环时，你可能也需要一些结束循环或者跳出当前循环的命令：
 

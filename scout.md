@@ -245,7 +245,6 @@ Scout 搜索返回 Eloquent 模型的集合，因此你可以直接从路由或�
         ->within('tv_shows_popularity_desc')
         ->get();
 
-<a name="where-clauses"></a>
 ### Where 语句
 
 Scout 允许你在搜索查询中增加简单的「where」语句。目前，这些语句只支持基本的数值等式检查，并且主要是用于根据拥有者的 ID 进行的范围搜索查询。由于搜索索引不是关系型数据库，因此当前不支持更高级的「where」语句：
