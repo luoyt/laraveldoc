@@ -149,15 +149,15 @@ Blade 的两个主要优点是 _模板继承_ 和 _区块_ 。
 
     The current UNIX timestamp is {{ time() }}.
 
-> {note} Blade `{{ }}` 语法会自动调用 PHP `htmlspecialchars` 函数来避免 X SS 攻击。
+> {note} Blade `{{ $name }}` 语法会自动调用 PHP `htmlspecialchars` 函数来避免 X SS 攻击。
 
 #### 显示未被转义的数据
 
-在默认情况下，Blade 模板中的 `{{ }}` 表达式将会自动调用 PHP `htmlspecialchars` 函数来转义数据以避免 X SS 的攻击。如果你不想你的数据被转义，你可以使用下面的语法：
+在默认情况下，Blade 模板中的 `{{ $name }}` 表达式将会自动调用 PHP `htmlspecialchars` 函数来转义数据以避免 X SS 的攻击。如果你不想你的数据被转义，你可以使用下面的语法：
 
     Hello, {!! $name !!}.
 
-> {note} 要非常小心处理用户输入的数据时，你应该总是使用 `{{  }}` 语法来转义内容中的任何的 HTML 元素，以避免 X SS 攻击。
+> {note} 要非常小心处理用户输入的数据时，你应该总是使用 `{{ $name }}` 语法来转义内容中的任何的 HTML 元素，以避免 X SS 攻击。
 
 <a name="blade-and-javascript-frameworks"></a>
 ### Blade & JavaScript 框架
